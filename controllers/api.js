@@ -13,7 +13,7 @@ exports.creator = async (req, res) => {
         res.send(user[0]);
     } catch (err) {
         console.log("Error is User: " + err);
-        res.sendStatus(400);
+        res.sendStatus(404);
     }
 };
 
